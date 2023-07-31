@@ -1063,7 +1063,7 @@ if (isset($_POST['add_telemetry'])) {
     //final setup stages
     $myfile = fopen("config.php", "a");
 
-    $txt = "\$config_enable_setup = 1;\n\n";
+    $txt = "\$config_enable_setup = 0;\n\n";
 
     fwrite($myfile, $txt);
 
